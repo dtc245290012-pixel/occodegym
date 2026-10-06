@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web bằng HTML5 Semantics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung bao toàn bộ trang web -->
+    <div id="main">
+        
+        <!-- 1. Header: Vùng đầu trang chứa Logo và Banner -->
+        <header id="head">
+            <div class="logo-title">LOGO & BANNER</div>
+        </header>
+
+        <!-- 2. Nav: Vùng chứa các liên kết điều hướng chính -->
+        <nav id="head-link">
+            <a href="#">Home</a> |
+            <a href="#">Students</a> |
+            <a href="#">Course</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Khung bao khối nội dung chính -->
+        <div id="content-wrapper">
+            
+            <!-- 3. Aside Left: Sidebar bên trái chứa menu phụ/liên kết -->
+            <aside id="left">
+                <h3>Cột Trái</h3>
+                <ul>
+                    <li><a href="#">Liên kết 1</a></li>
+                    <li><a href="#">Liên kết 2</a></li>
+                    <li><a href="#">Liên kết 3</a></li>
+                </ul>
+            </aside>
+
+            <!-- 4. Section: Vùng chứa các bài viết và nội dung trung tâm -->
+            <section id="content">
+                <article>
+                    <h2>Nội dung chính của bài viết</h2>
+                    <p>Nơi hiển thị Tin mới, Slide ảnh, tin tức cập nhật...</p>
+                    <p>Sử dụng các thẻ <code>&lt;section&gt;</code> và <code>&lt;article&gt;</code> giúp cấu trúc website chuẩn SEO và thân thiện với các bộ máy tìm kiếm.</p>
+                </article>
+            </section>
+
+            <!-- 5. Aside Right: Sidebar bên phải chứa thông tin bổ sung -->
+            <aside id="right">
+                <h3>Cột Phải</h3>
+                <p>Lịch, biểu đồ, bản đồ...</p>
+            </aside>
+
+        </div>
+
+        <!-- 6. Footer: Vùng chân trang chứa thông tin bản quyền -->
+        <footer id="footer">
+            <p>&copy; 2026 Bản quyền thuộc về trang web. Mọi quyền được bảo lưu.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

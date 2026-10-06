@@ -1,0 +1,100 @@
+/* Thiết lập cơ bản cho toàn bộ trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+/* Khung chứa cố định độ rộng và căn giữa */
+#main {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* 1. Header */
+#head {
+    height: 100px;
+    background-color: #33e0ff;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 2. Nav (Thanh điều hướng) */
+#head-link {
+    height: 35px;
+    background-color: #e2e2e2;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    line-height: 35px;
+    padding-left: 15px;
+}
+
+#head-link a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+#head-link a:hover {
+    color: #0066cc;
+}
+
+/* Clearfix xử lý tràn layout do Float */
+#content-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 3. Sidebar Trái (Aside Left) */
+#left {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 4. Nội dung chính (Section/Article) */
+#content {
+    width: 550px;
+    min-height: 400px;
+    float: left;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+/* 5. Sidebar Phải (Aside Right) */
+#right {
+    width: 210px;
+    min-height: 400px;
+    float: right;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 6. Footer (Chân trang) */
+#footer {
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+    clear: both;
+}
