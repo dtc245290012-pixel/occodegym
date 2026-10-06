@@ -1,0 +1,56 @@
+/* 1. Thiết lập màu nền (background-color) cho toàn bộ trang web */
+body {
+    background-color: #e0f2fe; /* Màu nền xanh nhạt dịu mắt */
+    font-family: Arial, sans-serif;
+    color: #333333;
+    padding: 40px 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Định dạng tiêu đề h1 */
+h1 {
+    color: #0369a1;
+    margin-bottom: 10px;
+}
+
+/* Định dạng đoạn văn mô tả */
+.description {
+    font-size: 16px;
+    color: #0284c7;
+    margin-bottom: 30px;
+}
+
+/* 2. Cấu hình khối div quan trọng với ảnh nền và căn giữa */
+.important-box {
+    /* Căn giữa khối div ra giữa màn hình */
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    /* Sử dụng hình ảnh nền mẫu từ Unsplash (ảnh thiên nhiên) */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80');
+    background-size: cover;        /* Phủ kín toàn bộ khối div */
+    background-position: center;   /* Căn giữa ảnh nền */
+    background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+
+    /* Định dạng chữ bên trong khối div (màu trắng để nổi bật trên nền ảnh) */
+    color: #ffffff;
+    text-align: center;            /* Căn giữa nội dung bên trong khối div */
+}
+
+.important-box h2 {
+    margin-top: 0;
+    font-size: 24px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.important-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
