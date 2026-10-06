@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành định dạng Bảng với CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-top: 30px;
+        }
+
+        /* 1 & 2. Định dạng Bảng với border-collapse, màu sắc, padding và độ rộng 100% */
+        table.custom-table {
+            width: 100%;
+            border-collapse: collapse; /* Gộp đường viền kép thành đơn */
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Định đường viền 1px solid và padding cho các ô */
+        table.custom-table th, 
+        table.custom-table td {
+            border: 1px solid #111111;
+            padding: 15px; /* Khoảng cách giữa chữ và đường viền */
+        }
+
+        /* 3 & 4. Định dạng tiêu đề th: Chiều cao, Căn trái, Nền tối, Chữ trắng */
+        table.custom-table th {
+            height: 50px;
+            text-align: left; /* Căn chỉnh ngang về bên trái */
+            background-color: #333333; /* Màu nền tối */
+            color: #ffffff; /* Chữ trắng */
+        }
+
+        /* 5 & 6. Định dạng ô dữ liệu td: Chiều cao, Căn dọc bottom, Màu nền & màu chữ */
+        table.custom-table td {
+            height: 60px;
+            vertical-align: bottom; /* Căn chỉnh dọc xuống phía dưới */
+            background-color: #f2f2f2; /* Màu nền xám nhạt */
+            color: #333333; /* Màu chữ xám đậm */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bài thực hành: Styling HTML Tables with CSS</h1>
+
+    <h2>Danh sách Học viên (Đã áp dụng CSS Table Styling)</h2>
+    
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Họ tên</th>
+                <th>Tuổi</th>
+                <th>Lớp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>20</td>
+                <td>Web</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>21</td>
+                <td>Web</td>
+            </tr>
+            <tr>
+                <td>Lê Văn C</td>
+                <td>22</td>
+                <td>Java</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
