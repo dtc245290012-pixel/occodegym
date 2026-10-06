@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 25px;
+}
+
+/* 2. List style square */
+.list-square {
+    list-style-type: square;
+}
+
+/* 3. Upper Roman */
+.list-roman {
+    list-style-type: upper-roman;
+}
+
+/* 4. List style image */
+.list-image {
+    /* Sử dụng SVG icon dấu tích xanh làm hình ảnh đánh dấu */
+    list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="green"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>');
+}
+
+/* 5. List style position */
+.pos-outside {
+    list-style-position: outside;
+    background-color: #e2e8f0;
+    padding: 15px 40px;
+}
+
+.pos-inside {
+    list-style-position: inside;
+    background-color: #feebc8;
+    padding: 15px 40px;
+}
+
+/* 6. List-style shorthand */
+.list-shorthand {
+    list-style: circle inside;
+}
+
+/* 7. Color & Spacing */
+.list-styled-colors {
+    background-color: #1e293b;
+    padding: 20px 40px;
+    border-radius: 8px;
+    list-style-type: disc;
+}
+
+.list-styled-colors li {
+    color: #38bdf8;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #334155;
+    border-radius: 4px;
+}
+
+/* 8. Bài tập tổng hợp: Roadmap List */
+.roadmap-list {
+    /* Thuộc tính rút gọn list-style */
+    list-style: decimal inside;
+    background-color: #e0f2fe;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #0284c7;
+    border-radius: 4px;
+}
+
+.roadmap-list li {
+    color: #0369a1;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
