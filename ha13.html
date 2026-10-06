@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+</head>
+<body>
+
+    <h1>Lịch họp công ty</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Gộp 2 hàng cho ngày Thứ Hai (do có 2 cuộc họp) -->
+                <td rowspan="2">Thứ Hai (09/10)</td>
+                <td>08:00 - 09:30</td>
+                <td>Họp giao ban đầu tuần các Trưởng bộ phận</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>Đánh giá tiến độ dự án Website</td>
+            </tr>
+            <tr>
+                <td>Thứ Ba (10/10)</td>
+                <!-- Gộp 2 cột (Giờ và Nội dung) do cuộc họp đào tạo kéo dài cả ngày -->
+                <td colspan="2">Cả ngày: Tập huấn An toàn thông tin cho toàn bộ nhân viên</td>
+            </tr>
+            <tr>
+                <!-- Gộp 2 hàng cho ngày Thứ Tư -->
+                <td rowspan="2">Thứ Tư (11/10)</td>
+                <td>13:30 - 15:00</td>
+                <td>Gặp gỡ khách hàng và ký kết hợp đồng</td>
+            </tr>
+            <tr>
+                <td>15:30 - 17:00</td>
+                <td>Họp nội bộ team Kỹ thuật</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
