@@ -1,0 +1,29 @@
+/* Quy tắc chung cho tất cả các card */
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #3498db; /* Màu xanh dương */
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Thẻ 1: Sử dụng content-box & Nền xanh lá */
+.card:nth-child(1) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+/* Thẻ 2: Sử dụng border-box & Nền vàng */
+.card:nth-child(2) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+    color: #333333; /* Đổi màu chữ tối cho dễ nhìn trên nền vàng */
+}
+
+/* Thẻ 3: Sử dụng border-box & Nền đỏ */
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
+}
