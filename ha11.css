@@ -1,0 +1,92 @@
+/* Thiết lập chung cho body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Tiêu đề trang (Block element) */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Thanh điều hướng */
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Các thẻ liên kết dùng display: inline-block */
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Khối section chứa các cột */
+section.container {
+    margin-top: 30px;
+    max-width: 1000px; /* Giới hạn độ rộng tối đa */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cột nội dung dùng display: inline-block */
+.box {
+    display: inline-block;
+    width: 28%; /* Đặt kích thước % phù hợp để không bị rớt hàng */
+    max-width: 300px;
+    padding: 20px;
+    background-color: lightblue;
+    margin: 1%;
+    box-sizing: border-box; /* Tính cả padding/border vào width */
+    vertical-align: top; /* Căn lề trên cho các hộp thẳng hàng */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #0056b3;
+    font-size: 18px;
+}
+
+.box p {
+    color: #444;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* Chân trang (Footer) */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #343a40;
+    color: #ffffff;
+    border-radius: 6px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    margin: 0;
+}
